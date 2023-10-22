@@ -18,19 +18,19 @@ public class MemberEntityInitializer implements CommandLineRunner {
     public void run(String... args) {
         Member user = Member.builder()
                 .username("user")
-                .roles("USER")
+                .roles("ROLE_USER")
                 .password(passwordEncoder.encode("1234"))
                 .build();
 
         Member admin = Member.builder()
                 .username("admin")
-                .roles("ADMIN")
+                .roles("ROLE_ADMIN")
                 .password(passwordEncoder.encode("1234"))
                 .build();
 
         Member superAdmin = Member.builder()
                 .username("super_admin")
-                .roles("SUPER_ADMIN")
+                .roles("ROLE_SUPER_ADMIN")
                 .password(passwordEncoder.encode("1234"))
                 .build();
 

@@ -4,9 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// TODO: 1. 상수 처리,  2. refresh-token추가
+
 @RestController
 @RequestMapping("/api/v1")
-public class HelloController {
+public class IndexController {
 
     @GetMapping("/index")
     public String hello(){
